@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3. 목록보기(ul,li,ol)</title>
+</head>
+<body>
+    <!-- 
+        ul(=unorder list)(순서가 없는 목록, 번호가 매겨져있지 않음)=> 상단메뉴 작성할때 사용
+                                             분류해서 보여주는 경우
+        type="disk"(디폴트), square, circle (비어있는 원으로 나옴)
+    
+    -->
+     <ul type="square">
+        <li><i>화면구현(html+css+javascript)</i></li>
+        <li><u>DB(오라클)</u></li> <!-- 태그명 쓰고 엔터해도되지만, 태그명 {내용} 을 하면 자동으로 내용이 들어감-->
+        <li><b>Java</b></li>
+     </ul>
+     <!-- 
+        ol(=order list)(순서가 있는 목록, 번호가 매겨져 있음)
+        type="1"(디폴트 번호 순서대로 출력), 로마자 기호(I)
+        A(대문자로 표시),a(소문자로 표시)
+        html문서 1.공백을 인식을 못함 => &nbsp; <-이용해서 공백주기
+                 2.중첩태그를 사용=> 강조하는경우(굵게)b, 밑줄u, 이탤릭체i
+                   <b></b> bold => <strong></strong>
+                   <u></u> underline
+                   <i></i>  
+                 3.특수기호 -> &nbsp;(공백) , <(=&lt;), >(&gt;)
+             
+
+      -->
+      <ol type="a"><!--중첩(태그내부에 또 다른 태그가 들어가 있는 상태)-->
+        <li>Jsp(web&nbsp;&nbsp;&nbsp;programming)</li>
+        <li>&lt;h1&gt;Spring&lt;/h1&gt;</li>
+        <li>Python</li>
+      </ol>
+      <hr>
+      <pre> <!--형식유지태그 pre 태그 사이에 줄바꿈, 공백을 자동으로 그 상태 그대로를 유지시키고자할때 사용함 -->
+      예습: 시맨틱태그, 테이블 태그           입력양식태그가
+                  중요합니다.!!!</pre>
+</body>
+</html> 

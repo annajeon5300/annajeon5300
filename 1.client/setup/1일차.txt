@@ -1,0 +1,501 @@
+
+컴퓨터 암호:7989
+
+   \\192.168.0.70
+
+강사:이연수
+
+ nup49rok1@empas.com=>과제
+
+ open office=>powerpoint viewer
+
+프로그램 설치-에디터 플러스 설치(next) visual studio code(맥용)
+
+ html(1.5일-2일)+css(1.5일-2일)+javascript(3일-4일)(1주)(7-8일)
+                               javascript예습
+==============================================
+ 1. 화면구현->스케줄표->6일=>작품+2일(미니 프로젝트)=>Jsp에서 작업
+                                메인 페이지
+
+   3장=>html,css
+   4장=>javascript(화면에 디자인정도)
+
+ ncs과목=>수업이 종료=>시험(필기시험(주관식)
+                                    실습시험(체크리스트->소스와 화면캡처)
+
+              2일예습
+2. DB관리(SQL활용=>오라클(5일)
+                            60점미만->재시험
+    데이터 검색(회원가입,수정,탈퇴,로그인)
+ ****************
+
+*** 3. 자바->지식=>자바언어를 배운다.
+                                  (3주) 
+                          
+8시간=>7시간 수업
+1시간=>Q & A->과제,질문,상담
+
+4. 서버프로그램 구현=>웹프로그래밍 과정(JSP) ->2일(화면구현)
+                        3.0~3.5주->미니 프로젝트
+                       
+
+5. 프론트엔드(jQuery,부트스트랩(8~9일)
+                               
+6. 스프링(3주)=>백엔드(개발자)=>오전수업,오후 프로젝트진행(5~6명정도)
+
+7. 프로젝트(4주)=>오전 수업->오후 프로젝트 진행
+8. 파이썬, 장고 (3주~4주)
+
+9. 프로젝트 기간 -> 3주
+================================>6개월
+
+ =>형상관리(=프로젝트관리 ->Git/Github)
+========================
+도구->기본설정=>글꼴(Verdana) 개발할때 필요로하는 글자체(I,l)
+        파일=>저장시 백업파일 생성 체크해제(~.bak)
+        기본 인코딩:UTF-8 (한글이 깨지지 않도록 설정해주는 옵션)
+  ->적용->확인
+
+ 브라우저->chrome을 미리 설치
+
+09:00~09:50
+10:00~10:50
+11:00~11:50
+12:00~12:50
+===========>
+1:00~2:00 점심식사
+
+2:00~2:50
+
+5:00~5:50
+================
+7:1(Q&A)->7시간 20분 ->30분정도(질의,응답)
+================
+
+ 속성창=>옵션탭->빠른 편집 모드
+                  체크
+          글꼴탭->12*27 콘솔크게
+          색탭->화면배경->흰색
+                화면텍스트->검정색
+
+C:\Users\kitcoop>ipconfig
+
+  강사용 컴퓨터의 ip주소->192.168.0.42
+                          ===========
+                          계정명:guest
+                          암호  :X
+
+ 시작 =>\\접속하고자하는 ip주소명 =>\\192.168.0.42
+
+Windows IP 구성
+
+
+이더넷 어댑터 로컬 영역 연결:
+
+   연결별 DNS 접미사. . . . :
+   링크-로컬 IPv6 주소 . . . . : fe80::4880:b00c:d0a2:d8e8%11
+   IPv4 주소 . . . . . . . . . : 192.168.0.35
+   서브넷 마스크 . . . . . . . : 255.255.255.0
+   기본 게이트웨이 . . . . . . : 192.168.0.1
+
+터널 어댑터 isatap.{510142AA-CDD7-491D-80BE-6C9CCE21770F}:
+
+   미디어 상태 . . . . . . . . : 미디어 연결 끊김
+   연결별 DNS 접미사. . . . :
+
+터널 어댑터 Teredo Tunneling Pseudo-Interface:
+
+   미디어 상태 . . . . . . . . : 미디어 연결 끊김
+   연결별 DNS 접미사. . . . :
+
+
+**** 다른 브라우저로 실행하기 ******
+
+ 도구->기본설정
+
+   일반->글꼴(verdana)=>개발할때 사용하는 글꼴중의 하나
+
+      I,l(자바)
+
+   파일->저장시 백업파일 생성(~.bak) 해제
+           기본인코딩->한글처리(UTF-8)
+                       euc-kr
+
+ Chrome을 설치했을때 크롬으로 결과를 보고싶을때 사용
+
+ Browser1  다른 브라우저 (위치 지정)
+ 다른 브라우저 : c:\programm files\google\Chorme\Application\Chorme.exe 
+
+  적용->확인 지정한 후 에디터플러스 종료한후 다시 실행시킨다.=>반영이 된다.
+
+ template=>미리 환경설정이 된 파일(필요로한 부분 적용이 된 파일)
+
+**************************************
+ 도구->기본설정->파일(문서 템플릿)->추가
+                    지정한 파일을 불러오게 설정(경로지정)
+                   c:\webtest\1.client\html5temp.html
+                   html5라는 메뉴이름을 새로 등록
+**************************************
+ www.w3schools.com=>html,css,javascript~
+ 자바 강의 =>용어 중심
+ 생활코딩 사이트
+==============================
+
+
+
+<!doctype html><!-- htmlo5 선언문 -->
+<html><!-- 문서의 시작태그 -->
+ <head><!-- 현재문서의 타이틀제목 -->
+  <meta charset="UTF-8"><!-- 한글표시(UTF-8) -->
+  <title>1.html문서 구조 및 내용.html</title>
+ </head>
+ <body><!-- 본문의 시작 -->
+  <h1>html문서의 특징</h1>
+  1.태그내부에 <strong>또 다른 태그</strong> 사용이 가능하다.(개행)<br>
+  2.태그는 <em>대소문자 구분이 없다.</em><br>
+  3.파일저장->~><i>html or htm</i><br>
+  4.태그내부에는 속성이 존재=>태그의 자세한 설정이
+    필요로할때 사용<br>
+  5.html문서-><u>문자,이미지,동영상,음악파일</u><br>
+  6.줄바꿈=>p(단락구분),br<p><!-- enter 2번 -->
+  7.미리보기=>ctrl+b<br><!-- enter 1번 -->
+  <!-- css속성
+    font-size(글자크기),font-color(글자색),font-family(글꼴)
+    color(영어,#RGB숫자(16진수)(1~9)10(A)~15(F)
+	                 0~255->255*255*255=16만 color색깔
+  -->
+  <font size="20pt" color="#33ff99" face="궁서">8.일반적인 글꼴,크기,색깔(css로 해결)</font>
+ </body>
+</html><!-- 문서의 끝태그 -->
+
+========================
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <title>2.이미지,링크문자열.html</title>
+ </head>
+ <body>
+  <h3>이미지 불러오기</h3>
+  <!-- 
+  절대경로=>c:\webtest\1.client\1일차~ 드라이브표시
+  상대경로=>현재폴더(.)를 기준=>불러올 파일을 지정해서 불러오는 방식
+  1.src=>이미지를 불러올 경로를 지정
+  2.width,height=>이미지크기(픽셀수=>모니터에 출력하는 점의갯수) 확대,축소
+  3.border="테두리(선의 굵기)를 지정할때 사용"
+  4.alt="툴팁문자열 표시"=>그림의 설명=>html5->figure,figcaption(이미지 설명문)
+    태그내부에 또 다른 태그를 작성(둘중의 하나 안쪽,바깥쪽)
+	<mark>형광펜으로 표시된 글자</mark>
+  -->
+ <figure>
+	<img src="./images/fish.jpg" width="324" height="227" border="0">
+	<figcaption><mark>이미지에 대한 설명글을 부여(망둥어)</mark></figcaption>
+</figure>
+<hr><!-- 선을 그을때 사용(선의 속성 html5에서 사용X) -->
+<figure>
+	<img src="./images/waiting.jpg" >
+	<img src="./images/Penguins.jpg"  width="362" height="474">
+</figure>
+<!-- 
+링크 href="이동하는 페이지(html) 또는 사이트주소" target="_blank"(새창)(브라우저 열때)_
+       크롬의 경우 탭이 추가돼서 이동
+	     #키워드(main)
+		 <div id="main"></div>=>화면전환되는 항목
+		      mailto:실제 메일주소를 연결
+-->
+<a href="http://www.naver.com">네이버</a><br>
+<a href="http://www.daum.net" target="_blank">다음</a><br>
+<a href="#">문서 내부에서의 특정위치로 이동할때 사용</a>
+<hr>
+공부하시다가 문의가 있으시면 <a href="mailto:nup49rok1@empas.com">저한테 메일좀</a>
+ </body>
+</html>
+==========================
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <title>3.목록보기(ul,li,ol)태그.html</title>
+ </head>
+ <body>
+  <h1>목록보기 예제</h1>
+<!-- 
+ul(unorder list)(순서가 없는 목록)=>상단메뉴 작성시
+ type="disk"(디폴트)(기본적으로 설정된것),square(네모),circle(원)
+-->
+<ul type="circle">순서없는 목록
+	<li>화면구현(html,css,Javascript)</li>
+	<li>DB(오라클)</li>
+	<li>Java</li>
+</ul>
+<hr>
+<!-- order list(순서있는 목록) 
+  type="1"(디폴트)숫자, 로마자 기호(i),A(대문자표시),
+                                                   a(소문자표시)-->
+<ol type="A">순서있는 목록
+	<li>Jsp(web)</li>
+	<li>Spring</li>
+	<li>프론트엔드 과목</li>
+</ol>
+ </body>
+</html>
+=========================
+  html5=>문서를 작성(글자,이미지)
+
+  주제를 설정?  제주도(산악회)
+ 
+   4.semantic(1).html
+
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <title>4.semantic(1).html</title>
+ </head>
+ <body>
+  <!-- 
+  semantic:'의미를 가진다.' 각 태그가 스스로 의미를 가진다.
+  1.header:사이트소개,메인메뉴(상단메뉴),사이트로고를 포함
+   ex)산악회 홍보 사이트
+  2.nav:사이트의 메뉴(좌측),링크문자열과 같이 연결
+  3.section:실제 문서 내용이 나오는 영역=>소제목이 있는 단락의 구분
+                 (논리적인 단위)
+  4.article:실제적인 자세한 문서내용=>문서내용이 많으면 여러개의
+                                                 article로 구분
+  5.aside:블로그 형식(오른쪽) - 사이드바
+  6.footer:작성자 정보,저작권 정보(링크문자열)
+  -->
+  <header><!-- 1.머리말 -->
+        <h1>산과 벗하는 산악회</h1>
+		<h3>주말 산행 뿐만아니라 주중 산행,무박 산행도 합니다.</h3>
+  </header>
+  <nav><!-- 2.상단메뉴 -->
+      <ul>
+		<li><a href="#">산행예절</a></li>
+		<li><a href="#">산행준비</a></li>
+		<li><a href="#">산행종류</a></li>
+		<li><a href="#">보행요령</a></li>
+		<li><a href="#">등산식량</a></li>
+      </ul>
+  </nav>
+  <section><!-- 3.소제목을 가진 단락(section) 묶어주는 논리적인 단위 -->
+    <header>
+        <h3>산행 예절</h3>
+	</header>
+    <article> 
+       <h4>인사</h4> 
+    <p>인사를 할 때에는 너무 큰소리로 하지 말고 상대방이 똑똑히 들을 정도의 소리로 인사한다. 산쟁이 중에는 "수고 하십니다"란 인사를 싫어하는 사람이 많다. 
+    오히려 그것 보단 "힘내세요" "조금만 가면 정상입니다" "좋은 산행 되세요"라고 인사가 적당하지 않은가 생각한다.
+    그리고 단체로 갈 땐 모든 사람이 인사를 하면 안된다 여러 명이 줄지어서 갈 땐 선두에 선 사람이 인사를 하고 뒷사람은 가볍게 목례정도만 하면 된다.</p>
+
+       <h4>추월을 해야 할땐 먼저 양해를 구하자.</h4>
+
+    <p>좁은 등산로에서 예고없이 추월을 한다면 배낭 같은 것이 부딪혀 서로 중심이 흐트러질 경우가 많다. 약한 사람은 튕겨 날 경우도 있다. 추월을 할 땐 미리 "먼저 가겠습니다"라고 하고 
+    비켜주면 그때 "고맙습니다"라고 인사를 하고 추월을 하자.</p>
+
+       <h4>올라오는 사람에게 양보를 하자.</h4>
+
+    <p> 산에서 많이 경험을 하였을 것이다. 내려 오는 사람보단 올라가는 사람이 시간이 촉박하다. 또 페이스 유지도 올라오는 사람이 유지하기가 어렵다. 단체일 경우에는 소수인 그룹이 양보한다.</p>
+	</article>
+
+  </section>
+ </body>
+</html>
+
+
+==================
+5.semantic(2)활용.html
+
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <title>5.semantic(2)활용.html</title>
+ </head>
+ <body>
+  <!-- 
+   nav 선택(필수 X),본문내용->section태그는 여러번 나올수가 있다.
+   section태그 내부에 반드시 article태그가 없을수도 있다.
+   footer태그 사용
+  -->
+  <header>
+     <h1>제주 올레</h1><!-- 문서 전체 타이틀제목 -->
+  </header>
+  <section><!-- 코스 소개 -->
+     <h3>제주 올레 7코스</h3>
+
+  <p>외돌개를 출발하여 법환포구를 경유해 월평포구까지 어어진 해안올레. 올레인들이 가장 아끼고 <mark>자연생태길</mark>인<mark> '수봉로'</mark>를 만날 수 있다. 
+  수봉로는 세 번째 코스 개척 시기인 2007년 12월, 올레지기인 '김수봉'님이 염소가 다니던 길에 직접 삽과 곡괭이만으로 계단과 길을 만들어서 
+  사람이 걸어다닐 수 있도록 한 길이다.</p> 
+
+  <strong>패스포트 스탬프 확인 장소</strong>
+  <p>
+    <b>시작</b> 외돌개 제주 올레 안내소 <br>
+    <b>중간</b>  강정 올레 쉼터<br>
+    <b>종점</b>  월평 송이 슈퍼</p>
+
+  <p><b> 난이도 : 상</b> 총 16.4km(4~5시간)<br>
+  수봉로는 언덕길이고 일강정 바당올레에서 서건도 사이 바윗길이 험한 편이다.</p>
+  </section>
+  <section><!-- 이미지 소개 -->
+     <figure>
+		<img src="./images/road1.jpg">
+		<figcaption>수봉로 언덕을 넘자마자 다시 만나게되는 바다</figcaption>
+	 </figure>
+
+	  <figure>
+		<img src="./images/road2.jpg">
+		<figcaption>외돌개 산책로에서 외돌개가 보인다.</figcaption>
+	 </figure>
+  </section>
+ <footer><!-- 작가의 이메일,문서작성날짜
+              html5(time)태그,이메일 주소표시(address)태그(이탤릭체표시)
+ -->
+<p> 이 문서는 <time datetime="2021-11-12" pubdate>2021년 11월 12일</time>에 작성되었습니다.
+<address>nup49rok1@empas.com</address>
+ </footer>
+ </body>
+</html>
+=================================
+ 6.semantic(3).html
+
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <title>6.semantic(3).html</title>
+ </head>
+ <body>
+  <!-- section태그내부에 또 다른 여러개의 section태그가 나올수가 있다. -->
+  <header>
+		<h1>제주 올레2</h1>
+  </header>
+  <section>
+     <h3> 1코스 </h3>
+   <p>제주 올레에서 가장 먼저 열린 길. 오름과 바다가이어지는 '오름-바당 올레'다. 아담하고 예쁜 시흥 초등학교에서 출발해 사시사철 푸른 들을 지나 말미로읆과 알오름에 오르면, 성산 일출봉과 우도, 조각보를 펼쳐놓은 듯한 들판과 바다를 한눈에 볼 수 있다.</p>
+
+    <section>
+     <h4>패스포트 스탬프 확인 장소</h4>
+       <p>시작 시흥리 안내소</p> 
+       <p>중간 금영 휴게소</p>
+       <p>종점 광치기 해안소</p>
+    </section>
+
+	<section>
+     <h4>난이도 : 중 </h4>
+     <p>총 15km(4~5시간)</p>
+	</section>
+</section>
+   <section>
+    <h3>2코스</h3>
+   <p>성산 광치기 해변에서 출발하여 고성, 대수산봉, 혼인지를 지나 온평리 바닷가까지 이어지는 올레. 물빛 고운 바닷길부터 잔잔한 저수지를 낀 들길, 호젓한 산길까지 색다른 매력의 길들이 이어진다.</p>
+  
+     <section>
+     <h4>패스포트 스탬프 확인 장소</h4>
+     <p>시작 광치기 해안소</p>
+     <p>중간 성산 홍마트</p>
+     <p>종점 온평 혼인지 정보센터</p>
+     </section>
+
+	 <section>
+     <h4>난이도 : 중</h4>
+     <p>총 17.2km(5~6시간)</p>
+	 </section>
+   </section>
+ </body>
+</html>
+
+
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <title>7.테이블태그.html</title>
+ </head>
+ <body>
+  <center>
+    <h3>테이블의 위치를 정가운데로 배치</h3>
+	<!-- 설명문
+	 표를 작성->border=n(선의 굵기),width,height(표의 크기)
+	                                         픽셀수(숫자),상대적인 단위(%)
+				  cellspacing->쉘과 쉘사이의 거리
+				  cellpadding->쉘과 문자열사이의 거리
+				  align="left | center | right"
+				  tr->전체행에 대한 속성을 부여할때
+				  td->특정항목만 부여할대 사용
+				  color=>글자색
+				  bgcolor="배경색"
+	-->
+	<table border="1" width="70%" height="100%"
+	          cellspacing="0" cellpadding="0">
+		<tr bgcolor="yellow"><!-- 행 -->
+			<!-- <td><center><b>월</b></center></td> --><!-- 열(가운데 정렬,굵게(b) -->
+			<th>월</th>
+			<th>수</th>
+			<th>금</th>
+		</tr>
+		<tr>
+			<td align="left" bgcolor="yellow">왼쪽</td>
+			<td align="center" bgcolor="green">가운데</td>
+			<td bgcolor="cyan" align="right">오른쪽</td>
+		</tr>
+	</table>
+  </center>
+  </body>
+ </html>
+
+
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <title>8.테이블병합.html</title>
+ </head>
+ <body>
+	<!-- align="center"
+	       caption태그=>표의 제목을 설정할때 사용
+           가로로 정렬->align="left,center,right"
+		   세로로 정렬->valign="top,middle,bottom"
+		   height=>높이(픽셀수),width=>넓이(% 계산할때 유리)
+		   가로로 병합(colspan="병합할 갯수"(=합치는 갯수)")
+		   세로로 병합(rowspan="병합할 갯수"(=세로로 합치는 갯수)")
+	-->
+	<table align="center" border="1" width="70%" height="100%"
+	          cellspacing="0" cellpadding="0">
+			  <caption>참가자 목록</caption>
+		<tr height="30" bgcolor="#33ff99"><!-- 행 -->
+			<th>이름</th>
+			<th>나이</th>
+			<th>성별</th>
+		</tr>
+		<tr height="100">
+			<td width="20%" valign="top" >홍길동</td>
+			<td width="30%" valign="bottom">35</td>
+			<td width="50%" valign="middle" align="center">남</td>
+		</tr>
+		<tr height="100">
+			<td>테스트</td>
+			<td>28</td>
+			<td>남</td>
+		</tr>
+	</table>
+ 
+  </body>
+ </html>
+
+==============================
+** 예습 ***
+p88 93
+5장 입력양식 태그(전체)
+
+화면디자인2 (form태그),html5 태그
+CSS의 소개,CSS적용시키는 방법 3가지,id선택자,클래스 선택자
+
+*******************************************
+
+
+
+
+
+
+
