@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3.css개요 및 작성법.html</title>
+    <style type="text/css">
+            /*  
+            여러줄 주석(=Java Script 주석 =Java 주석) 
+            2.공통적으로 사용하는 색깔, 이미지, 글꼴등을 적용시킬 수 있음 
+            -> head태그영역에 선언해서 사용함 => Embedd 방식
+            형식) 스타일 적용시킬 태그명,,(=선택자){속성명:속성값;~} 
+            특징) 현재 보고있는 페이지에서만 스타일이 적용 
+                  이 페이지와 연결된 다른 페이지에서는 적용不
+
+
+            h4,h3{font-family:궁서체;
+                  color: rgb(119, 2, 57); or "yellow"
+                  font-size: 27pt;
+                  } */
+
+                
+    </style>
+    <!-- link:css (파일을 인식해서 자동으로 추가)
+      rel="stylesheet" (불러오는 문서의 종류)
+      type = "text/css"=> 텍스트 형태의 css파일
+      href = "경로를 포함해서 불러올 css파일명 (.css)"
+     -->
+    <link rel="stylesheet" type="text/css" href="../sub/test.css">
+
+</head>
+<body>
+    <header>
+        <h3>CSS의 개요 및 특징</h3>
+    </header>
+    <section>
+        <header>
+            <!-- 1.인라인방식(style 속성을 이용) 
+                형식 ) style= "속성명 : 값; 속성명2:값2;,,,"
+                특정한 태그에만 스타일을 적용시키고자 할 때 사용
+                동일한 태그가 여러번 적용시키는 경우 ->불편(복사야해야함)
+                동일한 선택자를 통해서 스타일 적용 -> 우선순위가 더 높다 , 인라인이 먼저 적용이 된다.
+            
+            -->
+            <h4 style="font-family:바탕체;background:yellow;color:red;">스타일 시트의 장점</h4>
+        </header>
+        <article>
+            <ol>
+                <li>디자인 시간이 줄어든다.</li>
+                <li>문서의 로딩속도가 빨라진다.</li>
+            </ol>
+        </article>
+        <article>
+            <ol><h4 style="font-family:바탕체;background:yellow;color:red;">용어정리</h4>
+
+                <li>스타일(style) : 문서의 글꼴, 크기, 간격등의 
+                    출력형태(레이아웃)에 영향을 미치는요소
+                </li>
+                <li>스타일시트(Style Sheet) : 스타일의 내용만을
+                    별도로 모아서 head태그영역에 선언된 형태
+                </li>
+            </ol>
+        </article>
+    </section>
+
+
+</body>
+</html>

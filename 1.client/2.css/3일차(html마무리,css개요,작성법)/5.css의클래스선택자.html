@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5.CSS의 클래스선택자.html</title>
+    <style>
+        /*
+        클래스 선택자-> 서로 같은 태그를 구분해서 스타일을 적용시키고 싶을 때
+        형식) 태그명.클래스명(=임의의 작성글자)
+        => 태그명을 생략하면 => 클래스명을 포함한 모든 태그에 적용대상자가 됨 / 클래스명은 중복가능
+        */
+
+         div.a{
+            font-family: impact;
+            color: brown;
+            font-weight: bold; /*<b> or <strong> 태그 대신에*/
+         }
+
+         div.b{
+            font-style: italic; 
+            font font-family: 돋움체;
+            font: size 23px;
+         }
+
+         .c{text-align: center;
+            text-decoration: overline;
+
+         }
+
+         /*
+         text-decoration(글꼴장식) => underline(밑줄) <u> 
+                                     overline(글자위에 선긋기)
+                                     line-through(글자중간에 선긋기)
+         text-align(수평정렬(left,center,right)) => table의 align
+         vertical-align(수직정렬(top,middle,bottom))=> table의 valign                       
+         */
+
+    
+
+
+    </style>
+</head>
+<body>
+    <!-- 
+        div(영역을 설정할 때 많이 사용, 동일한 태그 사용)
+        태그명.클래스명 => 클래스 선택자
+        div.a+div.b+div => div#a+div#b+div
+
+        클래스명을 언제쓰는지
+
+    
+     -->
+     <div class="a">div태그</div>
+     <div class="b">div태그2</div>
+     <div>태그3</div>
+     <hr><!--선긋기-->
+     <h2>서로 다른 여러개의 태그에 공통의 스타일을 적용하고 싶을 때</h2>
+     <!-- a.c+i.c+div.c+span.c -->
+    <a class="c">a태그(class=c)적용</a><br>
+    <i class="c">i태그(class=c)적용</i><br>
+    <div class="c">div태그(class=c)적용</div>
+    <span class="c">span태그(class=c)적용</span>
+
+</body>
+</html>

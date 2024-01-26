@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7.입력양식.html </title>
+</head>
+<body>
+    <h3>웹프로그래밍을 하기 위한 입력 양식</h3>
+    <!-- 태그명:속성명 => 태그가 생성되면서 속성도 자동으로 추가
+         method => 데이터를 전송시켜주는 방법
+         get(디폴트)=>웹쇼핑(사이트 접속)->> 검색어 입력
+                     url속성항목에 검색어가 노출돼서 전송됨 (보안이 허술함)
+         post => 회원가입, 로그인, 수정할 때, 게시판 글쓰기..
+                     url 창에 노출이 안됨/ 데이터 전송하는 방법
+         action => 데이터를 전송해주는 페이지명(~.jsp) 공공기관, ~.php  
+         input:text => 문자열을 전송(이름,주소) size=> 입력받는 문자열의 길이 
+         input:password => 비밀번호
+         input:button => 버튼생성  
+         name => 입력받은 값을 구분하는 인자로 사용(=변수)       
+    --> 
+    <form action="register.jsp" method="post">
+        이름:<input type="text" name="name" size="10"><br>
+        암호:<input type="password" name="pw" size="10"><br>
+        메일:<input type="email" name="" size="10"><br>
+        <p></p>
+        <!-- 
+            둘중의 하나값을 선택=>ex)성별,결제선택(계좌이체,포인트)
+                input:radio
+                checked 속성을 줘야한다.
+         -->
+         <input type="radio" name="gender" checked="checked">남자
+         <input type="radio" name="gender" >여자
+         <p></p>
+         <!-- 
+            다중선택=> 동시에 여러개를 선택해야하는 경우
+                취미=>
+                input:checkbox (다중선택할 때)
+          -->
+        <input type="checkbox" name="movie"> 영화감상
+        <input type="checkbox" name="baseball"> 야구
+        <input type="checkbox" name="badook"> 바둑
+        <p></p>
+        <!-- 
+            정해져 있는 값중에서 하나를 선택(select)(=목록상자)
+            selected => 특정항목을 맨처음에 선택된 항목으로 나오게 설정
+         -->
+         취업희망:<select name="job">
+                     <option>웹프로그래머</option>
+                     <option selected>빅테이터(파이썬)</option>
+                     <option>DB전문가</option>
+                     <option>보안전문가</option>
+                  </select><P></P>
+
+                  <!-- 
+                    여러줄을 입력을 받을때 
+                    textarea rows="행수" / cols="열수"
+                   -->
+
+                   경력사항: <p></p>
+                   <textarea name="" id="" cols="40" rows="10">
+
+
+                   </textarea><p></p>
+
+                   <!-- 
+                    type:button => 일반버튼
+                    type:submit => 전송버튼(데이터를 전송시켜주는 버튼)
+                    => action="register.jsp"(목적지로 전송)
+                    input:reset => 전에 입력한 값을 모두 지우고 처음부터 다시 입력받을때 = 초기화
+                    onclick="alert(출력할 문자메세지)"
+                    -->
+dc
+        <input type="button" value="회원가입(전송이안됨)" 
+        onclick="alert('sorry')">
+        <input type="submit" value=회원가입>
+        <input type="reset" value="다시입력">
+    </form>
+</body>
+</html>

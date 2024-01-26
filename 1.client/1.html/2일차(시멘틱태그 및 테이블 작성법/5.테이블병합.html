@@ -6,30 +6,40 @@
     <title>5.테이블병합.html</title>
 </head>
 <body>
-    <!-- 3*3 표작성 -->
-    <!-- 
+    <!-- 3*3 표작성 
         center>table>(tr>th*3)+(tr>td*3)+tr>td*3 
+        가로로 정렬 => align => left/center/right 
+        세로로 정렬 => vlign => top/middle/bottom
+
+        병합 1)가로로 병합(colspan=합치는 갯수=병합할 갯수)
+             2)세로로 병합(rowspan=합치는 갯수=병합할 갯수)
     -->
 
     <center>
-        <table>
-            <tr>
-                <th></th>
-                <th></th>
-                <th></th>
+        <h3>참가자 목록</h3>
+        <table border="1" width="70%" height="100%"
+               cellspacing="0" cellpadding="0">
+               <!-- <caption>참가자 목록</caption> -->
+            <tr height="30" bgcolor="#99ff99"><!--99ff99는 의미없음 색상코드임-->
+                <!-- 
+                <th>이름</th>
+                <th>나이</th> -->
+                <th colspan="2">회원</th>
+                <th>성별</th>
             </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td>8888</td>
+            <tr height="100px">
+                <td width="20%" vlign="top">홍길동</td>
+                <td width="30%" vlign="bottom">35</td>
+                <td rowspan="2" width="50%" vlign="middle" align="center">남</td>
             </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
+            <tr height="100px">
+                <td>테스트</td>
+                <td>28</td>
+                <!-- <td>남</td> => 성별 남자가 공통됐기 때문에 아래있는 남자를 지운것 --> 
             </tr>
         </table>
     </center>
+
 
 </body>
 </html>

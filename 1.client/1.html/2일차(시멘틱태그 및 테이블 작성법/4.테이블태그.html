@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4.테이블태그.html</title>
+</head>
+<body>
+    <center>
+   
+    <h3>테이블의 위치를 정가운데로 배치</h3>
+    <!-- 
+        table>tr>td*3
+        1*3 표
+        table=>1.border=n(선의 굵기)
+               2.width,height(표의 크기)
+                픽셀수(숫자) or 상대적인 단위(%)
+                width->% , height->픽셀
+               3.cellspacing => 셀과 셀사이의 거리
+                cellpadding => 셀과 문자열 사이의 거리
+                  =>표의 이중선을 제거하고 단일선을 만들어줌
+               4.align= left/ center/ right   
+
+        tr => 전체행에 대한 속성을 부여
+        td => 특정항목만 부여할 때 사용
+        color => 글자색, bgcolor => 배경색
+ 
+     -->
+     <table border="1" width="70%" height="100%"
+            cellspacing="0" cellpadding="0" align="right">
+        <tr bgcolor="yellow" >
+            <!-- <td><center><b>월</b></center></td> -->
+            <th>월</th>
+            <th>수</th>
+            <th>금</th>
+        </tr>
+        <tr>
+            <td align="left" bgcolor="yellow">왼쪽</td>
+            <td align="center" bgcolor="green">가운데</td>
+            <td align="right" bgcolor="cyan">오른쪽</td>
+        </tr>
+     </table> 
+     </center>
+</body>
+</html>

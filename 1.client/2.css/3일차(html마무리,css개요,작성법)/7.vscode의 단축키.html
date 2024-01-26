@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7.vscode의 단축키.html</title>
+</head>
+<body>
+    <fieldset>
+    <h3>vscode에서 자주 사용되는 단축키</h3>
+    <!-- ol>li*16 -->
+    <ol>
+        <li>html 문서 템플릿 작성법 -> html 파일작성 후, "! enter " or "html:5 enter" </li>
+        <li>태그 작성하는 방법 => 태그이름 enter => 자동완성기능
+            ex) div enter
+                <div></div>
+        </li>
+        <li>같은 태그를 여러개 생성하는 방법 -> 태그명*n(반복할 수)
+            ex) div * 5
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+        </li>
+        <li>태그 중첩해서 생성하는 방법 => 태그명>태그명2>태그명3
+            ex) div>ul>ol*3
+                <div>
+                    <ul>
+                        <ol></ol>
+                        <ol></ol>
+                        <ol></ol>
+                    </ul>
+                </div>
+        </li>
+        <li>인접한 태그 생성하는 방법 
+            ex) div+h1+h2+h3+span
+                <div></div>
+                <h1></h1>
+                <h2></h2>
+                <h3></h3>
+                <span></span>
+            
+        </li>
+        <li>아이디 선택자 설정 => 태그명#아이디명{내용추가}
+            ex) div#name{내용추가} 생성 
+                <div id="name">내용추가</div>
+        </li>
+        <li>클래스 선택자 설정 => 태그명.클래스명
+            ex) div.test 
+                <div class="test"></div>
+        </li>
+        <li>태그{입력하고 싶은 텍스트} 입력후 enter or Tab 
+            ex) p{안녕하세요} 
+                <p>안녕하세요</p>
+        </li>
+        <li>숫자삽입(숫자 1씩증가)
+             ex) div#name$n (아이디,클래스,내용추가 선택할 때)
+            
+                <div id="name1"></div>
+                <div id="name2"></div>
+                <div id="name3"></div>
+                <div id="name4"></div>
+                <div id="name5"></div>
+
+             ex2) div{텍스트}.test$*3
+
+                <div class="test1">텍스트</div>
+                <div class="test2">텍스트</div>
+                <div class="test3">텍스트</div>
+                
+        </li>
+        <li>^입력시 상위계층으로 이동(중첩된 상황에서 상위게층으로 이동할 때, 여러번 사용가능)
+            => 자식태그로 만들어줌 (편입하는것)
+              ex) div>ul>li^p
+
+              <div>
+                <ul>
+                    <li></li>
+                </ul>
+                <p></p>
+              </div>
+        </li>
+        <li>^^p 한단게 아래로 이동 형식 
+            ex) div>ul>li^^p
+
+            <div>
+                <ul>
+                    <li></li>
+                </ul>
+            </div>
+            <p></p>
+
+            <!-- div>ul>li+p 로 하게되면 li 다음에 p가 만들어짐 -->
+
+            <div>
+                <ul>
+                    <li></li>
+                    <p></p>
+                </ul>
+            </div>
+
+        <li>(태그,,,)그룹으로 묶어주는 경우
+            ex) div>(ul>li)+ol>li 입력 후 enter 친 경우 
+            => 그룹으로 묶어줄 경우에 맨 마지막 괄호는 생략하기
+                <div>
+                    <ul>
+                        <li></li>
+                    </ul>
+                    <ol>
+                        <li></li>
+                    </ol>
+                </div>
+        </li>
+        <!-- 복수 선택자 -->
+        <li>자동완성기능 div#myid.classA.classB 입력 후 enter 
+            div#myid.classA (id와 클래스 선택자를 동시에 생성)
+            <div id="myid" class="classA"></div>
+        </li>
+        <li>div#myid.classA.classB 입력 후 enter 
+            <div id="myid" class="classA classb"></div>
+        </li>
+        
+    </ol>
+    </fieldset>
+</body>
+</html>
