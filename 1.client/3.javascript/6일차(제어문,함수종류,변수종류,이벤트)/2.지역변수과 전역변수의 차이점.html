@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2.지역변수와 전역변수의 차이점. html</title>
+    <script>
+        /*
+        전역변수(global) => 프로그램 전체에서 필요로하면 언제든지 불러다 사용가능한 변수
+        지역변수(local)=> 정해진 범위(=block)내에서만 사용함
+                    범위를 벗어나면 더이상 사용 不 ,왜? 휘발성 메모리라서
+       
+        함수선언
+
+        내장함수=> 언어가 이미 제공해주는 함수
+        사용자 정의 함수 => 기능이 필요할 때마다 만들 수 있다.
+                           이름이 있는 함수 o -> 일반적 function 함수명
+                           이름이 없는 함수 x (=익명함수라고함) -> jQuery
+                           형식) let 변수명= function() {
+                                함수의 내부기능 기술(변수선언,제어문)
+                           }
+                           변수명이 함수역할을 함 () or (매개변수~)
+                           test() ok 
+
+                           function test(){
+
+                           }
+                           test() ok 
+                           함수전에도 부를수있고 후에도 부를 수 있음
+                           -------
+                           반면 이름이 없는 함수는 반드시 함수 선언 후에만 부를 수 있다.
+                           
+                           let imsi=function(){}
+                           imsi() ok
+
+         */
+
+        let hello="(함수밖) 전역변수 hello"; // let과 관계없음
+        //전역변수가 되는 2가지 => function 함수밖에서 선언하면 무조건 전역
+
+        // 함수 바깥 hello 와 안의 hello 는 다름 ! 
+        function test(){
+             let hello="(함수안) 지역변수 bye";
+             global="(함수안) 전역변수 global"; // 함수 내부에서는 let 변수명이 아닌 그냥 변수명을 선언하는것이 전역임
+             let local ="(함수안) 지역변수 local";
+
+             alert(hello);
+             alert(global);
+             alert(local);
+        }
+             function other(){
+                alert(hello); // 전역변수는 다른 함수에서 계속 불러다 사용이 가능함
+             }
+             let imsi=function(){
+            //<- 이름이 없는 함수임,이름이 있는 함수->//function imsi(){
+                alert(global);
+             } 
+
+        
+
+    </script>
+</head>
+<body>
+    <!-- input:button*3 함수호출(=call) -->
+
+    <input type="button" value="실행" onclick="test();alert(hello)";>
+    <input type="button" value="실행2" onclick="other()";>
+    <input type="button" value="실행3" onclick="imsi()";>
+
+    
+</body>
+</html>

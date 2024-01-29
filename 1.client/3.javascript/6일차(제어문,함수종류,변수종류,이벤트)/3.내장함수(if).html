@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3.내장함수(if).html</title>
+   
+    <script>
+        /* 
+        문장을 만들때 1. 순차문-> 문장에 맞게 써준걸 코딩이라고 하는데, 코딩한 순서대로 실행이 되는 구문이다.
+                              
+        과 2. 제어문이 있다. => 어떤 특정한 조건식에 따라서 실행이 될수도 안될수도있음 (=조건식)
+              조건문(if문)=> 둘중에 하나를 체크하여 그 결과에 따라 실행하는 것 
+              형식) if(조건식) --- 변수, 수식(계산식(관계,논리))
+                    수행1
+
+                    if(조건식){
+                       수행1
+                       수행3
+                    }else{
+                       수행2
+                       수행4
+                    }
+        */
+    </script>
+
+
+</head>
+<body>
+    <script>
+        window.alert("경고성 문구를 출력할 때 사용"); // 객체명.함수명(~)
+        alert("두 줄을 나누\n어서 실행\n함"); // \n enter(줄바꿈해줌)
+        let name=prompt("당신의 이름을 입력하세요?",""); // 2. 디폴트값 
+        // flow-chart
+        if(name!=""){ // name 변수에 값이 저장이 된 상태라면
+           alert("당신의 이름은"+ name + "이군요"); 
+           alert("잘 입력했어요");
+        }else{
+           alert("이름을 먼저 입력하세요 !"); // required 속성
+           alert("자동종료됩니다.");
+         }
+
+
+ 
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1.논리.삼항연산자.html</title>
+</head>
+<body>
+    <script>
+        /*
+        논리연산자 -> 참과 거짓을 판별하는 연산자 (true or false)
+        => 계산식이 한 개 이상일 때 필요로하는 연산자
+           and(&&) : 논리 AND연산  or(||) : 논리 OR 연산  not(!) : 논리 NOT 연산
+
+
+           T  T  T                 T  T  T                T   F
+           T  F  F                 T  F  T                F   T
+           F  T  F                 F  T  F
+           F  F  F                 F  F  F
+    '
+        */
+
+        let a=30,b=40,c=50,d=80; // 각각의 변수를 선언, 각각의 값을 저장
+        document.write(a<b && c>d,"<br>"); // 왼쪽은 true, 오른쪽은 false-> 어쨌든 false
+        document.write(a<b || c>d,"<br>"); // or 연산자 참 , 거짓 -> 참 ture
+        document.write(!(a<b || c>d),"<br>"); // //!(ture) 의 반대니까 false 가 나옴
+
+        // 조건연산자(= 삼항연산자)
+        // 형식) let 변수명=(조건식)? 반환값1:반환값2; (참이라면 값1을 , 거짓이라면 값2 를 대입함)
+   
+        let pass=(d>=60)?"합격":"불합격"
+        document.write("당신은"+pass+"입니다"+"<br>") // 위에보면 d  는 80 이기 때문에 합격임
+        document.write((d>=60)?"합격":"불합격")
+        
+
+
+    </script>
+</body>
+</html>

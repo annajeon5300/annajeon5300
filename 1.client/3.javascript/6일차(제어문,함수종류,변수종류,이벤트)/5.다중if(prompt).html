@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5.다중if(prompt).html</title>
+   
+    <script>
+        /* 
+          조건식에 따라서 처리할 문장이 하나 이상인 경우 -> 다중if 문이라고 함 
+
+          ex) 성적처리 90 ->A 80->B 70->C 60->D <60 -> F
+
+          형식) if (조건식)
+                    수행1(참)
+                else if (조건식2)
+                    수행2(참)
+                else if (조건식3)
+                    수행3(참)
+                ,,,
+                else
+                     수행n
+      
+        */
+    </script>
+
+
+</head>
+<body>
+    <script>
+      
+        let qs=prompt("당신이 좋아하는 언어를 선택하세요 ? 1.자바 2.자바스크립트 3.C언어");
+        // alert(result); console.log(result) 내부적출력
+        // flow-chart
+           if((qs=="자바" || qs=="1")) // 탈퇴하겠다고 확인버튼을 눌렀을 때
+             alert("당신은 자바를 좋아하시는군요!");
+             
+            else if((qs=="자바스크립트" || qs=="2"))
+             alert("당신은 자바스크립트를 좋아하시는군요!");
+
+            else
+             alert(("당신은 C언어를 좋아하시는군요!" || qs=="3"));
+
+        
+                
+    </script>
+</body>
+</html>
