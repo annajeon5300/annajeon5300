@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4.let,const의 차이점</title>
+</head>
+<body>
+    <script>
+        /*
+          const => 상수화시킬 때 사용
+          변수 => 중간에 값이 변경 o 상수=> 일단 값이 저장되면 중간에 변경안되고 평생 그 값을 가짐 
+
+          1. const 를 사용할 때에는 반드시 상수화된 변수에 초기값을 설정해야함.
+             (구분하기 위해 관례적으로 대문자를 사용함)
+          2. 중간에 값을 변경할 수가 없다. why. 상수이기 때문에
+
+          3. let, var, const 의 공통점? 변수에 값을 저장할 수 있음
+            let, const 의 공통점? 1) 둘 다 중복선언이 不
+                                 2) 블럭내부에 변수를 선언 -> 블럭내부에서만 사용이 가능(지역변수)
+                                 3) 블럭내부의 변수는 외부에서 불러다가 사용 不 (변경하거나 출력 x)
+            let, const 의 차이점? 값을 변경 or 변경 x   
+
+
+        */
+       // let foo=123;// 변수 선언과 동시에 값을 저장시킨 형태(초기화)
+
+
+        let foo=123;// 변수선언(데이터를 저장시킬 공간만 만들어놓은 상태)
+        foo=789; // 초기화(값을 처음 저장)
+        foo=123;
+        document.write("foo=>"+foo+"<br>")
+       
+        document.write("-----const 실습-----<p>")
+            const TOO=123; // const 변수명=값;
+            //Too=456;
+            document.write("TOO=>"+TOO+"<br>"); //123
+
+            /* 오류값 : Uncaught TypeError: Assignment to constant variable. 
+               상수화된 변수는 이미 값이 고정이 되어 값이 변경될 수가 없다 (할당) */
+           
+            
+            {
+                const TOO=456; // 중복선언x => 똑같은 변수 두번 생성할 수 없음
+                const BAR=456; //지역변수(블럭 내부에서만 사용이 된 변수)
+                document.write("BAR=>"+BAR+"<br>") //456
+            }
+                document.write("블럭밖에서 TOO=>"+TOO+"<br>");
+                //document.write("블럭밖에서 사용?BAR=>"+BAR+"<br>");
+                //블럭 외부에서는 블럭 안쪽의 변수를 참조 x
+            
+
+           
+
+
+
+    </script>
+</body>
+</html>

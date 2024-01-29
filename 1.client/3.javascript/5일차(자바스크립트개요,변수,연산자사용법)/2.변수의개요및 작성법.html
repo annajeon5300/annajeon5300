@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2.변수의 개요 및 작성법</title>
+    <script>
+        /* (1)
+        var name="홍길동"; //var 변수명="값";
+        //변수선언(=공간이 생성 )
+        name="테스트"; // var는 중간에 값이 변경될 수 있다.
+        alert(name); //name값 출력
+        //변수명 => 영문자+숫자+특수기호(_,$만 가능), 첫글자 숫자 不
+        prompt(사용자 출력문구?)
+        */
+       var name=prompt("당신의 이름을 입력해주세요?");
+       var age=prompt("당신의 나이를 입력해주세요");
+       //alert(name); 출력구문 => 변수+문자열
+       document.write("name변수의 값=>"+name+"입니다. <br>"); //형식)document.write(출력문자열)
+       document.write("당신의 나이는" +age+ "살입니다 <br>");
+       alert(name+age);
+
+
+    </script>
+</head>
+<body>
+    <!-- ol>li*5 -->
+    <ol>변수(Variable) 개요 및 특징
+        <li>변수=> 사용자로부터 값을 입력받음
+            값(문자,숫자,논리적인 값(참OR거짓))을 받아서 메모리(RAM)에 저장함->
+            저장된 위치에 이름을 부여함
+        </li>
+        <li>var 변수명 = 저장할 값</li>
+        <li>변수명을 부여(대,소문자를 구분함)(name,Name,NAME)</li>
+        <li>변수의 값은 중간에 값이 변경이 되면 변경된 값을 새로 저장한다.</li>
+        <li>document.write(출력구문)</li>
+    </ol>
+</body>
+</html>
